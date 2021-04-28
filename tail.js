@@ -12,4 +12,5 @@ const tail = function (arr) {
   for (i = 1; i < arr.length; i++) {
     arr2.push(arr[i]);
   }
+  return arr2;
 };
