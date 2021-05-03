@@ -28,10 +28,5 @@ const map = function(array, callback) {
   return results;
 }
 const results1 = map(words, word => word[0]);
-console.log(assertArraysEqual(,[
-  "g",
-  "c",
-  "t",
-  "m",
-  "t"
-  ]));
+console.log(assertArraysEqual(results1,["g","c","t","m","t"])); ///pass
+console.log(assertArraysEqual(results1,["c","t","m","t"])); ///fail
